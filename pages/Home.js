@@ -2,7 +2,6 @@ import { createMaterialTopTabNavigator } from '@react-navigation/material-top-ta
 import { NavigationContainer} from '@react-navigation/native';
 import { Text, View} from 'react-native';
 import React from 'react';
-import { Provider } from 'react-redux';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 import Popular from './popular';
 
@@ -16,7 +15,6 @@ const Home = () => {
     const MyHub=()=>{return <View><Text>My..</Text></View>};
         
         return (
-          <Provider>
         <NavigationContainer>
         <Tab.Navigator 
          initialRouteName='Trend' tabBarPosition='bottom' >
@@ -43,7 +41,7 @@ const Home = () => {
                 />
     </Tab.Navigator>
         </NavigationContainer>
-        </Provider>)
+)
         }
 export default Home;
 /**/
